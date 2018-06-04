@@ -1,6 +1,3 @@
--------------------------------------------
-net-tools / java 
--------------------------------------------
 FROM ubuntu:16.04
 MAINTAINER mysam
 
@@ -27,4 +24,4 @@ RUN sed -i 's/PermitRootLogin without-password/PermitRootLogin yes/' /etc/ssh/ss
 
 EXPOSE 22
 
-CMD ["/usr/sbin/sshd", "-D"] 
+CMD ["/usr/sbin/sshd", "-D"]
